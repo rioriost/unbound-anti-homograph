@@ -1,0 +1,19 @@
+--- unbound.spec
++++ unbound.spec
+@@ -37,7 +37,7 @@
+ Summary: Validating, recursive, and caching DNS(SEC) resolver
+ Name: unbound
+ Version: 1.24.2
+-Release: 7%{?extra_version:-e %{extra_version}}%{?dist}.6
++Release: 7%{?extra_version:-e %{extra_version}}%{?dist}.6.antihomograph1
+ License: BSD-3-Clause
+ Url: https://nlnetlabs.nl/projects/unbound/
+ Source: https://nlnetlabs.nl/downloads/%{name}/%{name}-%{version}%{?extra_version}.tar.gz
+@@ -115,6 +115,7 @@
+ Patch22: unbound-1.26.1-CVE-2026-82717.patch
+ # https://github.com/NLnetLabs/unbound/commit/5d89e0c2a7577e78f8a8433b940b20819efc262e
+ Patch23: unbound-1.26.1-CVE-2026-82717-test.patch
++Patch100: unbound-vendor-veto.patch
+ 
+ BuildRequires: gcc
+ BuildRequires: make

@@ -1,0 +1,16 @@
+The original filter, tests, scripts, configuration example, and documentation
+in this repository are licensed under the MIT License.
+
+Unbound is a separate BSD-3-Clause-licensed dependency:
+https://github.com/NLnetLabs/unbound
+The required callback-failure fix is maintained separately:
+https://github.com/rioriost/unbound
+Unbound's core source, binaries, and callback patches are not included here.
+
+Unicode confusables data is downloaded separately from the official
+unicode-org/unicodetools repository. It is not relicensed under MIT.
+Copyright Unicode, Inc. See the downloaded file's copyright header and
+the Unicode License v3: https://www.unicode.org/license.txt
+The license is retained in LICENSES/Unicode-3.0.txt, including for the small
+mapping fixtures used by tests. The pinned source and checksum are recorded
+in scripts/fetch_confusables.py.
