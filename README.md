@@ -40,16 +40,12 @@ or answers already cached on a client.
 
 ## Prerequisites: native veto support and no chroot
 
-The required Unbound core fix is maintained separately at
-[rioriost/unbound](https://github.com/rioriost/unbound). Obtain a build containing
-that fix; do not assume the fork's default branch already contains it.
-This repository does not modify, vendor, or publish the separate core project.
-
-At initial publication, the production rollout used local core commit
-`17b4ab1b72e1cc0e9569d51ccd7f352450bb9b04`, which had not been pushed to that
-public fork. **Third-party reproduction therefore still requires the core
-project's maintainer to publish the fix.** The filter and deployment materials
-here are public; they are not a self-contained replacement for that dependency.
+The required Unbound core fix is maintained separately in
+[rioriost/unbound at commit `17b4ab1b`](https://github.com/rioriost/unbound/commit/17b4ab1b72e1cc0e9569d51ccd7f352450bb9b04).
+Obtain a build containing that commit or an equivalent distribution backport;
+do not assume the fork's default branch already contains it. This repository
+does not modify or vendor the separate core project. The filter and deployment
+materials here are not a self-contained replacement for that dependency.
 
 The build must provide all of the following:
 
