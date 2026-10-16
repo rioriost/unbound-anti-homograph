@@ -45,6 +45,12 @@ The required Unbound core fix is maintained separately at
 that fix; do not assume the fork's default branch already contains it.
 This repository does not modify, vendor, or publish the separate core project.
 
+At initial publication, the production rollout used local core commit
+`17b4ab1b72e1cc0e9569d51ccd7f352450bb9b04`, which had not been pushed to that
+public fork. **Third-party reproduction therefore still requires the core
+project's maintainer to publish the fix.** The filter and deployment materials
+here are public; they are not a self-contained replacement for that dependency.
+
 The build must provide all of the following:
 
 - `python` in the `Linked modules:` line of `unbound -V`.
