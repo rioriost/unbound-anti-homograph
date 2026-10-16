@@ -1,5 +1,7 @@
 # Unbound anti-homograph filter
 
+[English](README.md) | [日本語](README-ja.md)
+
 Reject DNS queries whose IDN labels contain non-ASCII characters mapped to
 ASCII letters by Unicode's confusables table. This is a deliberately strict
 character policy, not a comparison against a list of protected brands.
