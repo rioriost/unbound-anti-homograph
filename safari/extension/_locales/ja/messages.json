@@ -1,0 +1,20 @@
+{
+  "extensionName": { "message": "Anti-Homograph" },
+  "extensionDescription": { "message": "英字に似た別の文字がドメイン名に含まれる場合に警告します。Unicodeデータを使い、端末内で判定します。" },
+  "warningTitle": { "message": "ドメイン名に英字と紛らわしい文字があります" },
+  "warningBody": { "message": "このアドレスには英字に似た別の文字、または不正なPunycodeラベルが含まれています。パスワードや支払い情報を入力する前に、アドレスを確認してください。" },
+  "asciiLabel": { "message": "実際のドメイン名（Punycode）" },
+  "unicodeLabel": { "message": "Unicodeでの表示" },
+  "invalidLabel": { "message": "不正、または正規形でないPunycodeラベル" },
+  "leaveButton": { "message": "このページから離れる" },
+  "dismissButton": { "message": "このページの警告を閉じる" },
+  "clearTitle": { "message": "判定対象の文字は見つかりませんでした" },
+  "clearBody": { "message": "この拡張機能の判定条件には該当しませんでした。サイトの安全性を保証するものではありません。" },
+  "unsupportedTitle": { "message": "このページは判定対象外です" },
+  "unsupportedBody": { "message": "HTTPまたはHTTPSのページで開き直してください。自動警告には、SafariでWebサイトへのアクセスを許可する必要があります。" },
+  "errorTitle": { "message": "このページを判定できませんでした" },
+  "errorBody": { "message": "アドレスまたは判定データを読み取れませんでした。Safariでこの拡張機能のWebサイトへのアクセス許可を確認し、ページを再読み込みしてください。" },
+  "loading": { "message": "このページを確認中…" },
+  "policyNote": { "message": "Unicode 17.0.0 · 端末内で判定 · 閲覧情報の保存なし" },
+  "warningLimit": { "message": "この拡張機能は警告のみで、通信を遮断しません。ページはすでに読み込まれている場合があります。サイト側がページ上の警告を隠す可能性があるため、Safariのツールバーからも判定を確認してください。" }
+}

@@ -1,0 +1,25 @@
+:root {
+    color-scheme: light dark;
+    font: 16px/1.5 system-ui, sans-serif;
+    background: #fff;
+    color: #202124;
+}
+body { margin: 0; width: 360px; max-width: 100vw; }
+main { padding: 20px; overflow-wrap: anywhere; }
+h1 { font-size: 1.2rem; line-height: 1.35; margin: 0 0 12px; }
+p, dl, ul { margin: 12px 0; }
+dt { font-size: .875rem; font-weight: 600; }
+dd { margin: 4px 0 12px; font-family: ui-monospace, monospace; }
+ul { padding-inline-start: 24px; }
+.note { font-size: .875rem; }
+[data-status="warning"] { border-top: 5px solid #956000; }
+[data-status="error"] { border-top: 5px solid #b42318; }
+@media (prefers-color-scheme: dark) {
+    :root { background: #202124; color: #f1f3f4; }
+    [data-status="warning"] { border-color: #edbd62; }
+    [data-status="error"] { border-color: #ffb4ab; }
+}
+@media (forced-colors: active) {
+    :root { background: Canvas; color: CanvasText; }
+    [data-status] { border-color: CanvasText; }
+}

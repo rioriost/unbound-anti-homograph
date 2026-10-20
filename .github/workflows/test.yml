@@ -21,3 +21,17 @@ jobs:
       - run: python -m unittest discover -s tests -v
       - run: python scripts/fetch_confusables.py
       - run: git diff --exit-code
+
+  safari:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: "3.14"
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version: "24"
+      - run: python scripts/fetch_confusables.py
+      - run: python scripts/build_safari_data.py --check
+      - run: node --test tests/safari.test.cjs

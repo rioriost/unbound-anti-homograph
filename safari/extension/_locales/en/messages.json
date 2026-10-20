@@ -1,0 +1,20 @@
+{
+  "extensionName": { "message": "Anti-Homograph" },
+  "extensionDescription": { "message": "Warns about non-ASCII domain characters that resemble ASCII letters. Checks locally using Unicode data." },
+  "warningTitle": { "message": "Look-alike characters in this domain" },
+  "warningBody": { "message": "This address contains characters that resemble English letters, or an invalid Punycode label. Verify the address before entering passwords or payment details." },
+  "asciiLabel": { "message": "Actual domain (Punycode)" },
+  "unicodeLabel": { "message": "Unicode display" },
+  "invalidLabel": { "message": "Invalid or non-canonical Punycode label" },
+  "leaveButton": { "message": "Leave this page" },
+  "dismissButton": { "message": "Dismiss for this page" },
+  "clearTitle": { "message": "No matching characters found" },
+  "clearBody": { "message": "No characters matched this extension’s policy. This does not establish that the site is safe." },
+  "unsupportedTitle": { "message": "This page cannot be checked" },
+  "unsupportedBody": { "message": "Open an HTTP or HTTPS page, then open this extension again. Allow website access in Safari to receive automatic warnings." },
+  "errorTitle": { "message": "Unable to check this page" },
+  "errorBody": { "message": "The address or detection data could not be read. Check this extension’s website permissions in Safari and reload the page." },
+  "loading": { "message": "Checking this page…" },
+  "policyNote": { "message": "Unicode 17.0.0 · Checked on this device · No browsing data saved" },
+  "warningLimit": { "message": "Warning only: this extension does not block connections. The page may already have loaded. A website can hide the page banner; check the Safari toolbar popup for an independent result." }
+}

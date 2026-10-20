@@ -1,5 +1,6 @@
-The original filter, tests, scripts, configuration example, and documentation
-in this repository are licensed under the MIT License.
+The original filter, Safari extension and icon artwork, tests, scripts,
+configuration example, and documentation in this repository are licensed
+under the MIT License.
 
 Unbound is a separate BSD-3-Clause-licensed dependency:
 https://github.com/NLnetLabs/unbound
@@ -12,5 +13,7 @@ unicode-org/unicodetools repository. It is not relicensed under MIT.
 Copyright Unicode, Inc. See the downloaded file's copyright header and
 the Unicode License v3: https://www.unicode.org/license.txt
 The license is retained in LICENSES/Unicode-3.0.txt, including for the small
-mapping fixtures used by tests. The pinned source and checksum are recorded
-in scripts/fetch_confusables.py.
+mapping fixtures used by tests and the derived table in
+safari/extension/confusables.js. The pinned source and checksum are recorded
+in scripts/fetch_confusables.py. Distributions of the Safari extension must
+retain that license; a copy is included with its resources.

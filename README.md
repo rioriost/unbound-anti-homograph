@@ -10,6 +10,10 @@ character policy, not a comparison against a list of protected brands.
 The filter checks a native capability marker and refuses to initialize on an
 unsupported build. Read the prerequisites before changing a live resolver.
 
+For browser-side warnings without a custom resolver, see the
+[Safari Web Extension](safari/README.md). It shares this character policy but
+warns rather than blocking DNS or preventing page loads.
+
 ## What is blocked
 
 Every case-insensitive `xn--` label in the queried name is decoded as Punycode.
