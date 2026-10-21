@@ -31,7 +31,7 @@ jobs:
           python-version: "3.14"
       - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
         with:
-          node-version: "24"
+          node-version: "24.22.1"
       - run: python scripts/fetch_confusables.py
       - run: python scripts/build_safari_data.py --check
       - run: node --test tests/safari.test.cjs
